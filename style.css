@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://source.unsplash.com/random/1500×2100/?mountains);
+    background-size: cover;
+}
+
+.container {
+    /* border: 5px solid gray; */
+    backdrop-filter: blur(15px);
+    width: 30%;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.upper{
+    background-color: #3160ce;
+    opacity: 0.8;
+    text-align: center;
+    position: relative;
+    padding: 15px 0px;
+}
+
+.upper input{
+    width: 50%;
+    padding: 8px;
+}
+
+::placeholder{
+    color: #3160ce;
+}
+
+.upper button{
+    padding: 8px;
+    width: 12.5%;
+    color: #3160ce;
+    background-color: #bcc9f0;
+    border: none;
+}
+
+button:hover{
+    background-color: #5b80d8;
+    color: #e6ebf9;
+    cursor: pointer;
+}
+
+#heads{
+    padding: 12px 0px;
+    color: #e6ebf9;
+}
+
+.mylist{
+    overflow-y: auto;
+    max-height: 110px;
+}
+
+.mylist::-webkit-scrollbar {
+    display: none;
+}  
+
+ul li{
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    padding: 15px 10px 15px 20px;
+    background-color:#e6ebf9;
+    opacity: 0.8;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style: none;
+}
+
+i{
+   float: right;
+   color: #3160ce;
+   padding: 2px;
+}
+
+ul li:nth-child(odd){
+    background-color: #bcc9f0;
+}
+
+ul li:hover{
+    background-color: #869de4   ;
+}
+
+
+ul li.checked{
+    text-decoration: line-through;
+}
